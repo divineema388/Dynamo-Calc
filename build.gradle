@@ -1,23 +1,19 @@
 buildscript {
     ext {
-        kotlin_version = '1.9.0' // Using a recent stable Kotlin version
+        kotlin_version = '1.9.0'
     }
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.0' // Updated to a recent stable Android Gradle Plugin version
+        classpath 'com.android.tools.build:gradle:8.2.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+// allprojects block should generally not define repositories if repositoriesMode is set to FAIL_ON_PROJECT_REPOS
+// Remove the 'repositories' block from here.
 
 task clean(type: Delete) {
     delete rootProject.buildDir
