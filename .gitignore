@@ -1,0 +1,27 @@
+# GitHub APK Builder - Exclude sensitive config
+github_builder_config.json
+
+# Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# APK files
+*.apk
+*.aab
+
+# Keystore files
+*.jks
+*.keystore

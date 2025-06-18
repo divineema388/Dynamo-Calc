@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.DynamoCalc" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brown_primary</item>
+        <item name="colorPrimaryVariant">@color/brown_primary_dark</item>
+        <item name="colorOnPrimary">@color/text_color_light</item>
+        <item name="colorSecondary">@color/brown_accent</item>
+        <item name="colorSecondaryVariant">@color/brown_primary_dark</item>
+        <item name="colorOnSecondary">@color/text_color_light</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">@color/brown_primary_dark</item>
+
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+    </style>
+
+    <style name="Theme.DynamoCalc.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DynamoCalc.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DynamoCalc.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="cornerRadius">24dp</item> <item name="android:textColor">@color/text_color_light</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:stateListAnimator">@null</item> <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Widget.App.Button.Digit">
+        <item name="backgroundTint">@color/button_background_dark_brown</item>
+    </style>
+
+    <style name="Widget.App.Button.Operator">
+        <item name="backgroundTint">@color/button_background_light_brown</item>
+    </style>
+
+    <style name="Widget.App.Button.Function">
+        <item name="backgroundTint">@color/button_background_clear_grey</item>
+        <item name="android:textColor">@color/text_color_dark</item>
+    </style>
+
+    <style name="Widget.App.Button.Equals">
+        <item name="backgroundTint">@color/button_background_orange</item>
+    </style>
+
+</resources>
